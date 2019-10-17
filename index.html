@@ -194,24 +194,16 @@ Product Management Consultant
             </h2>
         </div>
         <div class="contact-section--form">
-            <form>
-                <fieldset>
-                    <label for="nameField">Name</label>
-                    <input type="text" placeholder="John" id="nameField">
-
-                    <label for="nameField">Last Name</label>
-                    <input type="text" placeholder="Smith" id="nameField">
-
-                    <label for="nameField">Email</label>
-                    <input type="text" placeholder="yourname@company.com" id="nameField">
-
-
-                    <label for="commentField">Comment</label>
-                    <textarea placeholder="Your request" id="commentField"></textarea>
-
-                    <input class="button-md contact-section--form--button" type="submit" value="Request demo">
-                </fieldset>
-            </form>
+            <!--[if lte IE 8]>
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+            <![endif]-->
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+            <script>
+                hbspt.forms.create({
+                    portalId: "6091377",
+                    formId: "1ee17e4d-89c4-4923-aa0a-f5434837002f"
+                });
+            </script>
 
         </div>
 
