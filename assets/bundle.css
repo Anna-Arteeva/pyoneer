@@ -435,17 +435,17 @@ mark,
   height: 3rem;
   left: -1em;
   right: 0;
-  background-image: url("../../img/home/hero-underline.svg"); }
+  background-image: url("../../assets/img/hero-underline.svg"); }
 
 .underline-1:before, .underline-2:before {
   bottom: -2.6rem;
   height: 3rem;
   left: -.2em;
   right: .1em;
-  background-image: url("../../img/home/underline.svg"); }
+  background-image: url("../../assets/img/home/underline.svg"); }
 
 .underline-2:before {
-  background-image: url("../../img/home/underline-2.svg"); }
+  background-image: url("../../assets/img/home/underline-2.svg"); }
 
 ol {
   padding-left: 1em; }
