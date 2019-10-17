@@ -1,0 +1,44 @@
+.home--hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 95vh;
+  position: relative;
+  z-index: 0;
+
+  @include for-big-desktop-up { margin-bottom: 5vh; }
+
+  @include for-desktop-up {
+    margin-top: - $header-height;
+    margin-bottom: 3vh;
+  }
+}
+
+.home--hero--content {
+  position: relative;
+
+  background: $color-brand;
+  background: $gradient-brand;
+  color: white;
+  border-bottom-right-radius: $border-radius-lg;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-end;
+}
+.home--hero--content-wrap {
+  max-width: 60rem;
+  padding-left: 5vw;
+}
+
+.hero-back {
+  position: absolute;
+ //width:  1em;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: auto;
+}
+.hero-button {
+  margin-top: 4vh;
+}
+

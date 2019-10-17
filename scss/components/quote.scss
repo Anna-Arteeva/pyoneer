@@ -1,0 +1,24 @@
+.quote-section {
+  @extend .centered-section;
+}
+
+.quote-body {
+  @extend .lead;
+  font-size: calc(1rem + ((1vw - 0.3rem) * 1));
+  font-weight: lighter;
+}
+
+.quote-author {
+  font-weight: bold;
+  font-size: calc(0.9rem + ((1vw - 0.3rem) * 0.2222));
+}
+.quote-author-role {
+  font-weight: 300;
+}
+
+.quote-logo {
+  width: 5rem;
+  height: 2.5rem;
+  margin-bottom: 1.5rem;
+  background-color: $color-back;
+}

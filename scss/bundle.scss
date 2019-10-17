@@ -1,0 +1,44 @@
+/*
+sass --watch scss/bundle.scss:assets/bundle.css
+*/
+
+//Variables
+@import 'variables/variables';
+
+//MIXINS
+@import 'mixins/mixins';
+
+@import 'base/normalize';
+@import 'base/body';
+
+
+//elements
+@import 'base/typography';
+@import "base/icons";
+@import "base/button";
+@import "base/_Form";
+@import 'base/icons';
+@import 'base/nav-dropdown';
+
+
+@import 'components/header';
+@import 'components/footer';
+@import 'components/sections';
+
+//Home
+@import 'components/hero';
+@import 'components/main-points';
+@import 'components/image-section';
+@import 'components/centered-section';
+@import 'components/quote';
+@import 'components/use-cases';
+@import 'components/contact-section';
+@import 'components/partner-logos';
+@import 'components/product-hero';
+@import 'components/work-dots';
+
+
+/*
+@import '';
+ */
+

@@ -1,0 +1,190 @@
+// stylelint-disable declaration-no-important, selector-list-comma-newline-after
+
+
+//
+// Headings
+//
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: .5em;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+}
+
+h1, .h1 { font-size: $h1-font-size; }
+h2, .h2 { font-size: $h2-font-size; }
+h3, .h3 { font-size: $h3-font-size; }
+h4, .h4 { font-size: $h4-font-size; }
+h5, .h5 { font-size: $h5-font-size; }
+h6, .h6 { font-size: $h6-font-size; }
+
+.hero-lead {
+  font-size: $lead-hero-font-size;
+  line-height: $line-height-lg;
+  font-weight: 200;
+}
+
+.lead {
+  font-size: $lead-font-size;
+  font-weight: $lead-font-weight;
+  line-height: 2em;
+}
+
+// Type display classes
+.display-1,
+.display-2 {
+  line-height: $display-line-height;
+  font-weight: bold;
+}
+
+.display-1 {
+  font-size: $display1-size;
+  font-weight: $display1-weight;
+}
+.display-2 {
+  font-size: $display2-size;
+  font-weight: $display2-weight;
+  margin-top: .2em;
+}
+.display-3 {
+  font-size: $display3-size;
+  font-weight: $display3-weight;
+  margin-top: .2em;
+}
+
+.subtitle {
+  color: $color-brand;
+  font-family: $font-family-handwriting;
+  margin-top: .5em;
+
+  @include for-tablet-portrait-down {
+    font-size: 18px;
+  }
+}
+
+//
+// Horizontal rules
+//
+
+hr {
+  margin-top: $hr-margin-y;
+  margin-bottom: $hr-margin-y;
+  border: 0;
+  border-top: $hr-border-width solid $hr-border-color;
+}
+
+
+//
+// Emphasis
+//
+
+small,
+.small {
+  font-size: $small-font-size;
+  font-weight: $font-weight-normal;
+}
+
+mark,
+.mark {
+  padding: $mark-padding;
+  background-color: $mark-bg;
+}
+
+
+//
+// Lists
+//
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+// Inline turns list items into inline-block
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+.list-inline-item {
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: $list-inline-padding;
+  }
+}
+
+.link {
+  color: $color-brand;
+}
+
+.text-centered {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+
+
+.sketch-underline {
+  position: relative;
+  white-space: nowrap;
+
+  &:before {
+    content: '';
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.hero-underline {
+  @extend .sketch-underline;
+
+  &:before {
+    bottom: -2.5rem;
+    height: 3rem;
+    left: -1em;
+    right: 0;
+    background-image: url("../../img/home/hero-underline.svg");
+  }
+}
+
+.underline-1 {
+  @extend .sketch-underline;
+
+  &:before {
+    bottom: -2.6rem;
+    height: 3rem;
+    left: -.2em;
+    right: .1em;
+    background-image: url("../../img/home/underline.svg");
+  }
+}
+
+.underline-2 {
+  @extend .underline-1;
+
+  &:before {
+    background-image: url("../../img/home/underline-2.svg");
+  }
+}
+ol {
+  padding-left: 1em;
+  li {
+    padding-left: .5em;
+  }
+}
+ul {
+  list-style-type: square;
+
+  li {
+    padding-left: .5em;
+    margin-bottom: .7em;
+  }
+}
+.nowrap {
+  white-space: nowrap;
+}

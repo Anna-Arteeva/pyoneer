@@ -1,0 +1,81 @@
+.main-points {
+  width: 100%;
+  max-width: 80rem;
+  @extend .section;
+ // display: flex;
+  >div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+
+    @include for-tablet-landscape-down {
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    @include for-phone-only {
+      margin-left:  -.5rem;
+      margin-right: -.5rem;
+    }
+  }
+
+    @include for-tablet-landscape-up {
+ //   justify-content: space-between;
+ //   align-items: flex-start;
+ //   padding: 0 1rem;
+ //   margin: $padding-v auto;
+  }
+
+  @include for-tablet-landscape-down {
+ //   flex-direction: column;
+  }
+}
+
+.main-points--blocks {
+  background: $color-back;
+  position: relative;
+
+  @include for-tablet-landscape-up {
+ //   width: calc(100% / 4 - 1rem);
+ //   margin-left: .75rem;
+    padding: 1.5rem;
+    border-radius: $border-radius-lg;
+
+   // &:first-child {
+   //   margin-left: 0;
+   // }
+  }
+
+  @include for-tablet-landscape-down {
+    padding: .5rem 1.5rem 0 1.5rem;
+    display: flex;
+    align-items: flex-start;
+
+    &:first-child {
+      padding-top: 1.5rem;
+    }
+    &:last-child {
+      padding-bottom: 1.5rem;
+    }
+  }
+}
+
+.main-points--icon {
+  @include for-tablet-landscape-up {
+    position: absolute;
+    top: -1.5rem;
+  }
+
+  @include for-tablet-landscape-down {
+    margin: 1rem 1rem 0 0 ;
+  }
+
+  @include for-phone-only {
+    width: 2rem;
+    margin-left: -.5rem;
+  }
+}
+
+.main-points--title {
+  font-size: $h3-font-size;
+}

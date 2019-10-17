@@ -1,0 +1,38 @@
+//TODO remove
+$color-brand: #3781FF;
+$color-brand-dark: #2C67FF;
+$color-brand-light: #46A4FF;
+$color-base: #172B63;
+//$color-base: #2C2F34;
+$color-base-dark: #2C2F34;
+$color-base-light: #717E94;
+$color-muted: #A0AABC;
+$color-middle-grey: #D0D8E7;
+$color-outline: #E9ECF2;
+$color-back-dark: #F0F4F7;
+$color-back: #F8F9FC;
+$white: #ffffff;
+$color-red: #FF4F6A;
+$color-red-dark: #FF3D64;
+$color-red-light: #FF7A63;
+$color-yellow: #FFD66C;
+$color-green: #0FB5B9;
+$color-green-dark: #009FA6;
+$color-green-light: #2AD7D5;
+
+:root {
+  // Colors
+  --color-brand:           $color-brand;
+  --color-brand-variation: $color-brand-light;
+  --color-red:             $color-red;
+  --color-yellow:          $color-yellow;
+
+  // Gray
+  --color-base:            $color-base;
+  --color-muted:           $color-muted;
+  --color-outline:         $color-outline;
+  --color-back:            $color-back;
+}
+
+$gradient-brand: linear-gradient(60deg, $color-brand-dark 0%, $color-brand, $color-brand-light 100%);
+$gradient-red: linear-gradient(60deg, $color-brand-dark 0%, $color-brand, $color-brand-light 100%);
