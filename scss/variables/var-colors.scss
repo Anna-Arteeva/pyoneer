@@ -20,19 +20,5 @@ $color-green: #0FB5B9;
 $color-green-dark: #009FA6;
 $color-green-light: #2AD7D5;
 
-:root {
-  // Colors
-  --color-brand:           $color-brand;
-  --color-brand-variation: $color-brand-light;
-  --color-red:             $color-red;
-  --color-yellow:          $color-yellow;
-
-  // Gray
-  --color-base:            $color-base;
-  --color-muted:           $color-muted;
-  --color-outline:         $color-outline;
-  --color-back:            $color-back;
-}
-
 $gradient-brand: linear-gradient(60deg, $color-brand-dark 0%, $color-brand, $color-brand-light 100%);
 $gradient-red: linear-gradient(-50deg, $color-red-dark 0%, $color-red, $color-red-light 100%);

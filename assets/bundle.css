@@ -2,16 +2,6 @@
 /*
 sass --watch scss/bundle.scss:assets/bundle.css
 */
-:root {
-  --color-brand: $color-brand;
-  --color-brand-variation: $color-brand-light;
-  --color-red: $color-red;
-  --color-yellow: $color-yellow;
-  --color-base: $color-base;
-  --color-muted: $color-muted;
-  --color-outline: $color-outline;
-  --color-back: $color-back; }
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
