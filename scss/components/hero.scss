@@ -1,33 +1,51 @@
 .home--hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 95vh;
+  min-height: 98vh;
   position: relative;
   z-index: 0;
+  margin-bottom: 3vh;
+
+  margin-top: - $header-height;
 
   @include for-big-desktop-up { margin-bottom: 5vh; }
 
-  @include for-desktop-up {
-    margin-top: - $header-height;
-    margin-bottom: 3vh;
+
+  @include for-tablet-portrait-up {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include for-tablet-portrait-down {
+    display: flex;
+    justify-content: stretch;
   }
 }
 
 .home--hero--content {
   position: relative;
-
   background: $color-brand;
   background: $gradient-brand;
   color: white;
-  border-bottom-right-radius: $border-radius-lg;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: flex-end;
+
+  @include for-tablet-portrait-up {
+    border-bottom-right-radius: $border-radius-lg;
+  }
+
+  @include for-tablet-portrait-down {
+    text-align: center;
+  }
 }
+
 .home--hero--content-wrap {
   max-width: 60rem;
-  padding-left: 5vw;
+  padding: 3vw;
+
+  @include for-desktop-up {
+    padding-left: 6vw;
+  }
 }
 
 .hero-back {

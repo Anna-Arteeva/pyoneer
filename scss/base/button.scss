@@ -8,9 +8,10 @@ input[type='button'],
 input[type='reset'],
 input[type='submit'] {
   background-color: $color-red;
-  //border: 1px solid $color-brand;
+  background: $gradient-red;
+  border: 1px solid $color-red;
   color: $white;
-  border-radius: $border-radius;
+  border-radius: $border-radius-sm;
   cursor: pointer;
   display: inline-block;
   font-weight: 400;

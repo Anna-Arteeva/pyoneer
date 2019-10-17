@@ -2,6 +2,7 @@
   //shadow
   position: relative;
   background: #fff;
+  border-radius: $border-radius-lg;
 
   &:before {
     content:"";
@@ -27,11 +28,18 @@
 }
 
 .screenshot {
+  min-width: 500px;
+  min-height: 200px;
+  @include for-tablet-portrait-down {
+    min-width: 100%;
+  }
+
   max-width: 100%;
   height: auto;
   display: block;
   border-radius: $border-radius-lg;
   border: 4px solid rgba($color-outline, .4);
+
 
   &:not(:last-of-type) {
     margin-bottom: 2rem;

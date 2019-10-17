@@ -1,4 +1,5 @@
 $header-height: 115px;
+
 .header {
   @extend .section-breakpoints;
   display: flex;
@@ -7,10 +8,7 @@ $header-height: 115px;
   padding: $section-padding-v-xs $section-width-sides-desktop;
   position: relative;
   z-index: 10;
-
-  @include for-desktop-up {
-    height: $header-height;
-  }
+  height: $header-height;
 
   @include for-tablet-portrait-down {
     flex-direction: column;
@@ -24,6 +22,8 @@ $header-height: 115px;
 .header--logo {
   height: 30px;
   max-width: 45vw;
+
+  &.sm { display: none}
 
   @include for-tablet-portrait-down {
     margin: 1.5vh 0;
@@ -57,6 +57,10 @@ $header-height: 115px;
 
   padding-bottom: 24px;
   font-size: 1rem;
+
+  @include for-tablet-portrait-down {
+    color: white;
+  }
 
 
   @include for-phone-only {
