@@ -905,9 +905,20 @@ input[type='radio'] {
 .dark-section {
   color: white;
   background-color: #46A4FF;
-  background-color: linear-gradient(60deg, #2C67FF 0%, #3781FF, #46A4FF 100%); }
+  background-color: linear-gradient(60deg, #2C67FF 0%, #3781FF, #46A4FF 100%);
+  position: relative; }
   .dark-section .subtitle {
     color: white; }
+  .dark-section:before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    top: 1vh;
+    left: 9vw;
+    width: 374px;
+    height: 374px;
+    background: url("../assets/img/dots-pattern.svg");
+    background-repeat: no-repeat; }
 
 .home--hero {
   min-height: 98vh;
@@ -937,12 +948,13 @@ input[type='radio'] {
   flex-direction: column;
   justify-content: center;
   align-content: flex-end; }
-  @media (min-width: 600px) {
+  @media (min-width: 900px) {
     .home--hero--content {
       border-bottom-right-radius: 20px; } }
-  @media (max-width: calc(600px - 1px)) {
+  @media (max-width: calc(900px - 1px)) {
     .home--hero--content {
-      text-align: center; } }
+      text-align: center;
+      padding-bottom: 30vh; } }
   .home--hero--content:before {
     content: '';
     position: absolute;
@@ -977,7 +989,8 @@ input[type='radio'] {
 .home--hero--review-floaties {
   position: absolute;
   left: -320px;
-  bottom: 5vh; }
+  bottom: 5vh;
+  z-index: 10; }
 
 .home--hero--content-lead {
   max-width: 30rem; }
@@ -985,12 +998,17 @@ input[type='radio'] {
 .home--hero--chart {
   position: absolute;
   right: 8vw;
-  bottom: 3vh; }
+  bottom: 3vh;
+  max-width: 25vw; }
 
 .home--hero--dots {
   position: absolute;
-  right: -30%;
-  bottom: 30%; }
+  right: -20%;
+  top: 10%;
+  max-width: 30vw; }
+  @media (max-width: calc(600px - 1px)) {
+    .home--hero--dots {
+      display: none; } }
 
 .main-points {
   width: 100%;

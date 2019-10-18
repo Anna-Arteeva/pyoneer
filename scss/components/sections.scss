@@ -37,8 +37,21 @@
   color: white;
   background-color: $color-brand-light;
   background-color: $gradient-brand;
+  position: relative;
 
   .subtitle {
     color: white;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    top:     1vh;
+    left:    9vw;
+    width:  374px;
+    height: 374px;
+    background: url("../assets/img/dots-pattern.svg");
+    background-repeat:no-repeat ;
   }
 }

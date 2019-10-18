@@ -31,13 +31,15 @@
   justify-content: center;
   align-content: flex-end;
 
-  @include for-tablet-portrait-up {
+  @include for-tablet-landscape-up {
     border-bottom-right-radius: $border-radius-lg;
   }
 
-  @include for-tablet-portrait-down {
+  @include for-tablet-landscape-down {
     text-align: center;
+    padding-bottom: 30vh;
   }
+
 
   &:before {
     content: '';
@@ -81,6 +83,7 @@
   position: absolute;
   left: -320px;
   bottom: 5vh;
+  z-index: 10;
 }
 
 .home--hero--content-lead {
@@ -92,10 +95,16 @@
   position: absolute;
   right: 8vw;
   bottom: 3vh;
+  max-width: 25vw;
 }
 
 .home--hero--dots {
   position: absolute;
-  right: -30%;
-  bottom: 30%;
+  right: -20%;
+  top: 10%;
+  max-width: 30vw;
+
+  @include for-tablet-portrait-down {
+    display: none;
+  }
 }
