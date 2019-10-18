@@ -504,10 +504,11 @@ input[type='submit'] {
   input[type='reset']:hover,
   input[type='submit']:focus,
   input[type='submit']:hover {
-    background-color: #0461ff;
-    border-color: #0461ff;
     color: #ffffff;
-    outline: 0; }
+    outline: 0;
+    box-shadow: 0 15px 40px 0 rgba(23, 43, 99, 0.3);
+    background: linear-gradient(-50deg, #FF4F6A, #FF7A63 100%);
+    transition: box-shadow ease 0.2s, background ease 0.5s; }
   .button[disabled], [disabled].header--button,
   button[disabled],
   input[type='button'][disabled],

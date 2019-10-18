@@ -25,10 +25,13 @@ input[type='submit'] {
 
   &:focus,
   &:hover {
-    background-color: darken($color-brand, 10%);
-    border-color: darken($color-brand, 10%);
+ //   background: darken($color-red, 10%);
+ //   border-color: darken($color-red, 10%);
     color: $white;
     outline: 0;
+    box-shadow:  0 15px 40px 0 rgba($color-base,0.3);
+    background: $gradient-red-light;
+    transition: box-shadow ease 0.2s, background ease 0.5s ;
   }
 
   &[disabled] {
