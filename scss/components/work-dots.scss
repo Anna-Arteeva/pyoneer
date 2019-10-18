@@ -18,16 +18,17 @@ $text-length-sm:          20vw;
   display: flex;
   justify-content: space-between;
   color: $work-dots-text;
-  font-size: .9em;
   position: relative;
   margin: 7vh auto;
   //max-width: 1100px;
 
   @include for-tablet-portrait-up {
     padding: 0 $side-padding-length 100px $side-padding-length;
+    font-size: 1.1em;
 
     @include for-desktop-down {
       padding: 0 $side-padding-length-sm 100px $side-padding-length-sm;
+      font-size: 0.9em;
     }
   }
 

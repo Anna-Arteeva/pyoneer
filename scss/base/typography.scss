@@ -155,13 +155,16 @@ mark,
 .underline-1 {
   @extend .sketch-underline;
 
-  &:before {
-    bottom: -2.6rem;
-    height: 3rem;
-    left: -.2em;
-    right: .1em;
-    background-image: url("../../assets/img/home/underline.svg");
-  }
+  @include for-tablet-landscape-up {
+    &:before {
+      bottom: -1.4rem;
+      height: 9px;
+      width: 84px;
+      left: 50%;
+      margin-left: -42px;
+      background-image: url("../assets/img/underline.svg");
+    }
+  };
 }
 
 .underline-2 {
@@ -187,4 +190,7 @@ ul {
 }
 .nowrap {
   white-space: nowrap;
+}
+.strong {
+  font-weight: $font-weight-bold;
 }

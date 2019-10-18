@@ -48,14 +48,14 @@ $header-height: 115px;
 }
 
 .header--link {
-  color: $color-base-light;
+  color: $color-base;
   text-decoration: none;
   display: inline-block;
 
   border-bottom: 1px solid  transparent;
   margin: 0 2rem -1px 0;
 
-  padding-bottom: 24px;
+  padding-bottom: 16px;
   font-size: 1rem;
 
   @include for-tablet-portrait-down {
@@ -73,8 +73,8 @@ $header-height: 115px;
   &:hover,
   &:focus,
   &:active {
-    color: var(--color-brand);
-    border-bottom-color: var(--color-brand);
+    color: $color-brand;
+    border-bottom-color: $color-brand;
     text-decoration: none;
   }
 
