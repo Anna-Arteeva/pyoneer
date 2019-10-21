@@ -12,13 +12,14 @@ sass --watch scss/bundle.scss:assets/bundle.css
 @import 'base/body';
 
 
-//elements
+//base
 @import 'base/typography';
 @import "base/icons";
 @import "base/button";
 @import "base/_Form";
 @import 'base/icons';
 @import 'base/nav-dropdown';
+@import 'base/font-br';
 
 
 @import 'components/header';
@@ -36,6 +37,7 @@ sass --watch scss/bundle.scss:assets/bundle.css
 @import 'components/partner-logos';
 @import 'components/product-hero';
 @import 'components/work-dots';
+@import 'components/about-hero';
 
 
 /*

@@ -43,3 +43,10 @@
   color: var(--color-base);
   text-decoration: none;
 }
+
+.footer-icon {
+  width: 1rem;
+  position: relative;
+  top: .2rem;
+  fill: $color-base-light;
+}

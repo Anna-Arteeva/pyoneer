@@ -1,0 +1,76 @@
+.about--hero {
+  min-height: 83vh;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 3vh;
+  padding-bottom: 4.5vw;
+  //overflow: hidden;
+
+  margin-top: - $header-height;
+
+  @include for-big-desktop-up { margin-bottom: 5vh; }
+
+
+  @include for-tablet-portrait-up {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include for-tablet-portrait-down {
+    display: flex;
+    justify-content: stretch;
+  }
+}
+
+
+.about--hero--content {
+  @extend .home--hero--content;
+  padding-right: 35px;
+}
+
+.about--hero--content-wrap {
+  @extend .home--hero--content-wrap;
+}
+
+.about--hero--img {
+  position: relative;
+}
+
+.about--hero--photo-wrap {
+  position: absolute;
+  left: -30px;
+  bottom: -3vh;
+  z-index: 10;
+
+  @include for-desktop-up {
+    max-width: 50vw;
+    min-width: 40vw;
+  }
+}
+.about--hero--photo {
+  max-width: 50rem;
+}
+
+.about--hero--content-lead {
+  @extend .hero-lead;
+  max-width: 30rem;
+}
+
+.about--hero--dots {
+  position: absolute;
+  right: 20%;
+  top: 20%;
+  max-width: 30vw;
+
+  @include for-tablet-portrait-down {
+    display: none;
+  }
+}
+
+.about-section-gallery {
+
+}
+
+.subtitle-quote {
+  max-width: 200px;
+}

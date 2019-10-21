@@ -317,14 +317,14 @@ html {
 
 body {
   color: #172B63;
-  font-family: Gotham, Roboto, SF, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "BRHendrix", Roboto, SF, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.5em; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: .5em;
-  font-family: Gotham, Roboto, SF, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: bold;
+  font-family: "BRHendrix", Roboto, SF, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 900;
   line-height: 1.2;
   color: inherit; }
 
@@ -346,7 +346,7 @@ h5, .h5 {
 h6, .h6 {
   font-size: calc(1rem + ((1vw - 4.8px) * 0.1389)); }
 
-.hero-lead, .home--hero--content-lead {
+.hero-lead, .home--hero--content-lead, .about--hero--content-lead {
   font-size: calc(1rem + ((1vw - 4.8px) * 0.7639));
   line-height: 1.78;
   font-weight: 200; }
@@ -363,16 +363,16 @@ h6, .h6 {
 
 .display-1 {
   font-size: calc(1.375rem + ((1vw - 4.8px) * 3.6111));
-  font-weight: 600; }
+  font-weight: 900; }
 
 .display-2 {
   font-size: calc(1.625rem + ((1vw - 4.8px) * 1.9444));
-  font-weight: 600;
+  font-weight: 900;
   margin-top: .2em; }
 
 .display-3 {
   font-size: calc(1.125rem + ((1vw - 4.8px) * 1.1111));
-  font-weight: 600;
+  font-weight: 900;
   margin-top: .2em; }
 
 .subtitle {
@@ -382,6 +382,8 @@ h6, .h6 {
   @media (max-width: calc(600px - 1px)) {
     .subtitle {
       font-size: 18px; } }
+  .subtitle.dark {
+    color: #172B63; }
 
 hr {
   margin-top: 0.5em;
@@ -464,7 +466,7 @@ ul {
   white-space: nowrap; }
 
 .strong {
-  font-weight: 600; }
+  font-weight: 900; }
 
 .icon-front-text svg {
   display: inline-block;
@@ -764,6 +766,156 @@ input[type='radio'] {
   position: relative;
   top: -.5em; }
 
+/**
+ * @license
+ * MyFonts Webfont Build ID 3826939, 2019-10-21T14:52:45-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: BRHendrix-Thin by Brink
+ * URL: https://www.myfonts.com/fonts/brink/br-hendrix/thin/
+ * 
+ * Webfont: BRHendrix-ThinItalic by Brink
+ * URL: https://www.myfonts.com/fonts/brink/br-hendrix/thin-italic/
+ * 
+ * Webfont: BRHendrix-ExtraLight by Brink
+ * URL: https://www.myfonts.com/fonts/brink/br-hendrix/extra-light/
+ * 
+ * Webfont: BRHendrix-ExtraLightItalic by Brink
+ * URL: https://www.myfonts.com/fonts/brink/br-hendrix/extra-light-italic/
+ * 
+ * Webfont: BRHendrix-Light by Brink
+ * URL: https://www.myfonts.com/fonts/brink/br-hendrix/light/
+ * 
+ * Webfont: BRHendrix-LightItalic by Brink
+ * URL: https://www.myfonts.com/fonts/brink/br-hendrix/light-italic/
+ * 
+ * Webfont: BRHendrix-Regular by Brink
+ * URL: https://www.myfonts.com/fonts/brink/br-hendrix/regular/
+ * 
+ * Webfont: BRHendrix-RegularItalic by Brink
+ * URL: https://www.myfonts.com/fonts/brink/br-hendrix/regular-italic/
+ * 
+ * Webfont: BRHendrix-Medium by Brink
+ * URL: https://www.myfonts.com/fonts/brink/br-hendrix/medium/
+ * 
+ * Webfont: BRHendrix-MediumItalic by Brink
+ * URL: https://www.myfonts.com/fonts/brink/br-hendrix/medium-italic/
+ * 
+ * Webfont: BRHendrix-SemiBold by Brink
+ * URL: https://www.myfonts.com/fonts/brink/br-hendrix/semi-bold/
+ * 
+ * Webfont: BRHendrix-SemiBoldItalic by Brink
+ * URL: https://www.myfonts.com/fonts/brink/br-hendrix/semi-bold-italic/
+ * 
+ * Webfont: BRHendrix-Bold by Brink
+ * URL: https://www.myfonts.com/fonts/brink/br-hendrix/bold/
+ * 
+ * Webfont: BRHendrix-BoldItalic by Brink
+ * URL: https://www.myfonts.com/fonts/brink/br-hendrix/bold-italic/
+ * 
+ * Webfont: BRHendrix-Black by Brink
+ * URL: https://www.myfonts.com/fonts/brink/br-hendrix/black/
+ * 
+ * Webfont: BRHendrix-BlackItalic by Brink
+ * URL: https://www.myfonts.com/fonts/brink/br-hendrix/black-italic/
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3826939
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright © 2019 by Christoph York. All rights reserved. Modification of this file requires prior written permission from Brink Type.
+ * 
+ * © 2019 MyFonts Inc
+*/
+/* @import must be at top of file, otherwise CSS will not work */
+@font-face {
+  font-family: 'BRHendrix', 'BRHendrix-Thin';
+  src: url("fonts/br/3A64FB_0_0.eot");
+  src: url("fonts/br/3A64FB_0_0.eot?#iefix") format("embedded-opentype"), url("fonts/br/3A64FB_0_0.woff2") format("woff2"), url("fonts/br/3A64FB_0_0.woff") format("woff"), url("fonts/br/3A64FB_0_0.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal; }
+@font-face {
+  font-family: 'BRHendrix',  'BRHendrix-ThinItalic';
+  src: url("fonts/br/3A64FB_1_0.eot");
+  src: url("fonts/br/3A64FB_1_0.eot?#iefix") format("embedded-opentype"), url("fonts/br/3A64FB_1_0.woff2") format("woff2"), url("fonts/br/3A64FB_1_0.woff") format("woff"), url("fonts/br/3A64FB_1_0.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic; }
+@font-face {
+  font-family: 'BRHendrix',  'BRHendrix-ExtraLight';
+  src: url("fonts/br/3A64FB_2_0.eot");
+  src: url("fonts/br/3A64FB_2_0.eot?#iefix") format("embedded-opentype"), url("fonts/br/3A64FB_2_0.woff2") format("woff2"), url("fonts/br/3A64FB_2_0.woff") format("woff"), url("fonts/br/3A64FB_2_0.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: 'BRHendrix',  'BRHendrix-ExtraLightItalic';
+  src: url("fonts/br/3A64FB_3_0.eot");
+  src: url("fonts/br/3A64FB_3_0.eot?#iefix") format("embedded-opentype"), url("fonts/br/3A64FB_3_0.woff2") format("woff2"), url("fonts/br/3A64FB_3_0.woff") format("woff"), url("fonts/br/3A64FB_3_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'BRHendrix',  'BRHendrix-Light';
+  src: url("fonts/br/3A64FB_4_0.eot");
+  src: url("fonts/br/3A64FB_4_0.eot?#iefix") format("embedded-opentype"), url("fonts/br/3A64FB_4_0.woff2") format("woff2"), url("fonts/br/3A64FB_4_0.woff") format("woff"), url("fonts/br/3A64FB_4_0.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'BRHendrix',  'BRHendrix-LightItalic';
+  src: url("fonts/br/3A64FB_5_0.eot");
+  src: url("fonts/br/3A64FB_5_0.eot?#iefix") format("embedded-opentype"), url("fonts/br/3A64FB_5_0.woff2") format("woff2"), url("fonts/br/3A64FB_5_0.woff") format("woff"), url("fonts/br/3A64FB_5_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'BRHendrix',  'BRHendrix-Regular';
+  src: url("fonts/br/3A64FB_6_0.eot");
+  src: url("fonts/br/3A64FB_6_0.eot?#iefix") format("embedded-opentype"), url("fonts/br/3A64FB_6_0.woff2") format("woff2"), url("fonts/br/3A64FB_6_0.woff") format("woff"), url("fonts/br/3A64FB_6_0.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'BRHendrix',  'BRHendrix-RegularItalic';
+  src: url("fonts/br/3A64FB_7_0.eot");
+  src: url("fonts/br/3A64FB_7_0.eot?#iefix") format("embedded-opentype"), url("fonts/br/3A64FB_7_0.woff2") format("woff2"), url("fonts/br/3A64FB_7_0.woff") format("woff"), url("fonts/br/3A64FB_7_0.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'BRHendrix',  'BRHendrix-Medium';
+  src: url("fonts/br/3A64FB_8_0.eot");
+  src: url("fonts/br/3A64FB_8_0.eot?#iefix") format("embedded-opentype"), url("fonts/br/3A64FB_8_0.woff2") format("woff2"), url("fonts/br/3A64FB_8_0.woff") format("woff"), url("fonts/br/3A64FB_8_0.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'BRHendrix',  'BRHendrix-MediumItalic';
+  src: url("fonts/br/3A64FB_9_0.eot");
+  src: url("fonts/br/3A64FB_9_0.eot?#iefix") format("embedded-opentype"), url("fonts/br/3A64FB_9_0.woff2") format("woff2"), url("fonts/br/3A64FB_9_0.woff") format("woff"), url("fonts/br/3A64FB_9_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'BRHendrix',  'BRHendrix-SemiBold';
+  src: url("fonts/br/3A64FB_A_0.eot");
+  src: url("fonts/br/3A64FB_A_0.eot?#iefix") format("embedded-opentype"), url("fonts/br/3A64FB_A_0.woff2") format("woff2"), url("fonts/br/3A64FB_A_0.woff") format("woff"), url("fonts/br/3A64FB_A_0.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'BRHendrix',  'BRHendrix-SemiBoldItalic';
+  src: url("fonts/br/3A64FB_B_0.eot");
+  src: url("fonts/br/3A64FB_B_0.eot?#iefix") format("embedded-opentype"), url("fonts/br/3A64FB_B_0.woff2") format("woff2"), url("fonts/br/3A64FB_B_0.woff") format("woff"), url("fonts/br/3A64FB_B_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'BRHendrix',  'BRHendrix-Bold';
+  src: url("fonts/br/3A64FB_C_0.eot");
+  src: url("fonts/br/3A64FB_C_0.eot?#iefix") format("embedded-opentype"), url("fonts/br/3A64FB_C_0.woff2") format("woff2"), url("fonts/br/3A64FB_C_0.woff") format("woff"), url("fonts/br/3A64FB_C_0.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'BRHendrix',  'BRHendrix-BoldItalic';
+  src: url("fonts/br/3A64FB_D_0.eot");
+  src: url("fonts/br/3A64FB_D_0.eot?#iefix") format("embedded-opentype"), url("fonts/br/3A64FB_D_0.woff2") format("woff2"), url("fonts/br/3A64FB_D_0.woff") format("woff"), url("fonts/br/3A64FB_D_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'BRHendrix',  'BRHendrix-Black';
+  src: url("fonts/br/3A64FB_E_0.eot");
+  src: url("fonts/br/3A64FB_E_0.eot?#iefix") format("embedded-opentype"), url("fonts/br/3A64FB_E_0.woff2") format("woff2"), url("fonts/br/3A64FB_E_0.woff") format("woff"), url("fonts/br/3A64FB_E_0.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+@font-face {
+  font-family: 'BRHendrix',  'BRHendrix-BlackItalic';
+  src: url("fonts/br/3A64FB_F_0.eot");
+  src: url("fonts/br/3A64FB_F_0.eot?#iefix") format("embedded-opentype"), url("fonts/br/3A64FB_F_0.woff2") format("woff2"), url("fonts/br/3A64FB_F_0.woff") format("woff"), url("fonts/br/3A64FB_F_0.ttf") format("truetype"); }
 .header {
   display: flex;
   justify-content: space-between;
@@ -878,6 +1030,12 @@ input[type='radio'] {
   color: var(--color-base);
   text-decoration: none; }
 
+.footer-icon {
+  width: 1rem;
+  position: relative;
+  top: .2rem;
+  fill: #717E94; }
+
 .section-breakpoints, .header, .section, .section-back, .dark-section, .main-points, .home-testimonial, .centered-section, .quote-section, .section-product-hero {
   margin-left: auto;
   margin-right: auto; }
@@ -940,7 +1098,7 @@ input[type='radio'] {
       display: flex;
       justify-content: stretch; } }
 
-.home--hero--content {
+.home--hero--content, .about--hero--content {
   position: relative;
   background: #3781FF;
   background: linear-gradient(60deg, #2C67FF 0%, #3781FF, #46A4FF 100%);
@@ -950,13 +1108,13 @@ input[type='radio'] {
   justify-content: center;
   align-content: flex-end; }
   @media (min-width: 900px) {
-    .home--hero--content {
+    .home--hero--content, .about--hero--content {
       border-bottom-right-radius: 20px; } }
   @media (max-width: calc(900px - 1px)) {
-    .home--hero--content {
+    .home--hero--content, .about--hero--content {
       text-align: center;
       padding-bottom: 30vh; } }
-  .home--hero--content:before {
+  .home--hero--content:before, .about--hero--content:before {
     content: '';
     position: absolute;
     z-index: 0;
@@ -967,11 +1125,11 @@ input[type='radio'] {
     background: url("../assets/img/dots-pattern.svg");
     background-repeat: no-repeat; }
 
-.home--hero--content-wrap {
+.home--hero--content-wrap, .about--hero--content-wrap {
   max-width: 60rem;
   padding: 3vw; }
   @media (min-width: 1200px) {
-    .home--hero--content-wrap {
+    .home--hero--content-wrap, .about--hero--content-wrap {
       padding-left: 6vw; } }
 
 .hero-back {
@@ -1261,6 +1419,11 @@ input[type='radio'] {
   max-width: 40rem;
   margin: auto; }
 
+.contact-section {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto; }
+
 .contact-section--form {
   max-width: 30rem;
   margin: auto;
@@ -1352,13 +1515,13 @@ input[type='radio'] {
       width: 100%;
       height: 100%;
       border-radius: 50%;
-      background: repeating-linear-gradient(-45deg, #E9ECF2, #E9ECF2 1px, white 1px, white 5px); }
+      background: repeating-linear-gradient(-45deg, #D0D8E7, #D0D8E7 1px, white 1px, white 5px); }
     .work-dots li:after {
       content: '';
       width: 30px;
       height: 30px;
       border: white solid 11px;
-      box-shadow: 0 0 0 1px #E9ECF2;
+      box-shadow: 0 0 0 1px #D0D8E7;
       background: #172B63;
       border-radius: 50%;
       position: absolute;
@@ -1378,7 +1541,7 @@ input[type='radio'] {
     right: calc(calc(220px / 2) + 60px);
     top: 15px;
     height: 2px;
-    background-image: linear-gradient(to right, #E9ECF2 33%, transparent 0%);
+    background-image: linear-gradient(to right, #D0D8E7 33%, transparent 0%);
     background-position: bottom;
     background-size: 13px;
     background-repeat: repeat-x; } }
@@ -1404,6 +1567,59 @@ input[type='radio'] {
     .work-dots li span {
       padding-top: 20px;
       width: 20vw; } }
+
+.about--hero {
+  min-height: 83vh;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 3vh;
+  padding-bottom: 4.5vw;
+  margin-top: -115px; }
+  @media (min-width: 1800px) {
+    .about--hero {
+      margin-bottom: 5vh; } }
+  @media (min-width: 600px) {
+    .about--hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr; } }
+  @media (max-width: calc(600px - 1px)) {
+    .about--hero {
+      display: flex;
+      justify-content: stretch; } }
+
+.about--hero--content {
+  padding-right: 35px; }
+
+.about--hero--img {
+  position: relative; }
+
+.about--hero--photo-wrap {
+  position: absolute;
+  left: -30px;
+  bottom: -3vh;
+  z-index: 10; }
+  @media (min-width: 1200px) {
+    .about--hero--photo-wrap {
+      max-width: 50vw;
+      min-width: 40vw; } }
+
+.about--hero--photo {
+  max-width: 50rem; }
+
+.about--hero--content-lead {
+  max-width: 30rem; }
+
+.about--hero--dots {
+  position: absolute;
+  right: 20%;
+  top: 20%;
+  max-width: 30vw; }
+  @media (max-width: calc(600px - 1px)) {
+    .about--hero--dots {
+      display: none; } }
+
+.subtitle-quote {
+  max-width: 200px; }
 
 /*
 @import '';

@@ -63,6 +63,10 @@ h6, .h6 { font-size: $h6-font-size; }
   @include for-tablet-portrait-down {
     font-size: 18px;
   }
+
+  &.dark {
+    color: $color-base;
+  }
 }
 
 //
