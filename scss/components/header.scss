@@ -60,6 +60,7 @@ $header-height: 115px;
 
   @include for-tablet-portrait-down {
     color: white;
+    &.icon {display: none;}
 
     &:hover,
     &:focus,
@@ -67,7 +68,6 @@ $header-height: 115px;
       color: white !important;
     }
   }
-
 
   @include for-phone-only {
     font-size: .9em;
@@ -82,22 +82,19 @@ $header-height: 115px;
     color: $color-brand;
     border-bottom-color: $color-brand;
     text-decoration: none;
-  }
 
+    &.icon {
+      border-bottom-color: transparent;
+    }
+  }
 }
 
-
 .header--search {
-
   height: 38px;
   min-width:  38px;
 
   background: var(--color-outline);
   border-radius: var(--border-radius-lg);
-
-  &:before {
-    //icon
-  }
 }
 
 .header--profile {

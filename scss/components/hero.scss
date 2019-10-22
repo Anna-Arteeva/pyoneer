@@ -3,16 +3,16 @@
   position: relative;
   z-index: 0;
   margin-bottom: 3vh;
-  overflow: hidden;
-
   margin-top: - $header-height;
 
-  @include for-big-desktop-up { margin-bottom: 5vh; }
-
+  @include for-big-desktop-up {
+    margin-bottom: 5vh;
+  }
 
   @include for-tablet-portrait-up {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    overflow: hidden;
   }
 
   @include for-tablet-portrait-down {
@@ -40,17 +40,24 @@
     padding-bottom: 30vh;
   }
 
+  @include for-tablet-portrait-down {
+    padding-bottom: 0;
+    width: 100vw;
+  }
 
-  &:before {
-    content: '';
-    position: absolute;
-    z-index: 0;
-    bottom:   3vh;
-    right:    9vw;
-    width:  374px;
-    height: 374px;
-    background: url("../assets/img/dots-pattern.svg");
-    background-repeat:no-repeat ;
+
+  @include for-tablet-portrait-up {
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: 0;
+      bottom: 3vh;
+      right: 9vw;
+      width: 374px;
+      height: 374px;
+      background: url("../assets/img/dots-pattern.svg");
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -61,6 +68,7 @@
   @include for-desktop-up {
     padding-left: 6vw;
   }
+
 }
 
 .hero-back {
@@ -81,9 +89,19 @@
 
 .home--hero--review-floaties {
   position: absolute;
-  left: -320px;
-  bottom: 5vh;
-  z-index: 10;
+
+  @include for-tablet-portrait-up {
+    left: -20vw;
+    bottom: 5vh;
+    z-index: 10;
+    max-width: 40vw;
+  }
+
+  @include for-tablet-portrait-down {
+    left: -100vw;
+    width: 100vw;
+    bottom: -15vw;
+  }
 }
 
 .home--hero--content-lead {
@@ -96,6 +114,10 @@
   right: 8vw;
   bottom: 3vh;
   max-width: 25vw;
+
+  @include for-tablet-portrait-down {
+    display: none;
+  }
 }
 
 .home--hero--dots {

@@ -41,6 +41,7 @@
                     transparent 11px
     );
   }
+
 }
 .screenshot-wrapper {
   position: relative;
@@ -48,6 +49,13 @@
   background: #fff;
   border-radius: $border-radius-lg;
 
+  &.no-back {
+    &:before { box-shadow: none;}
+    background: transparent;
+    .screenshot {
+      border: 0;
+    }
+  }
 }
 
 .screenshot {
@@ -58,6 +66,7 @@
   @include for-tablet-portrait-down {
     min-width: 100%;
   }
+
 
   max-width: 100%;
   height: auto;
@@ -238,5 +247,32 @@
 
   @include for-phone-only {
     flex-direction: column-reverse;
+  }
+}
+
+.screenshot-integrations {
+  position: relative;
+  margin-bottom: -10vh ;
+
+  @include for-tablet-landscape-up {
+    margin-top:    -10vh ;
+
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: 0;
+      top:     -10vh;
+      right:    -3vw;
+      width:  504px;
+      height: 504px;
+      background: url("../assets/img/dots-blue.svg") ;
+      background-repeat:no-repeat ;
+      background-size: contain;
+    }
+  }
+
+  @include for-tablet-landscape-down {
+    max-width: 400px;
+    margin: auto;
   }
 }

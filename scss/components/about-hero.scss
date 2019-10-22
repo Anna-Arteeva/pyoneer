@@ -14,7 +14,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    min-height: 90vh;
+    min-height: 96vh;
     padding-bottom: 5.5vw;
   }
 }
@@ -36,7 +36,7 @@
   @extend .home--hero--content-wrap;
 
   @include for-tablet-landscape-down {
-    margin-top: 10vh;
+    margin-top: 130px;
     margin-bottom: 5vh;
   }
 
@@ -51,7 +51,7 @@
   position: relative;
 
   @include for-tablet-landscape-down {
-    margin-top: -15vh;
+    margin: -15vh 3vw 0;
     //add horizontal margins
   }
 
@@ -99,6 +99,11 @@
   @include for-tablet-landscape-up {
     margin-top: 5vh;
   }
+
+  @include for-phone-only {
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+  }
 }
 
 .about-gallery--1-row,
@@ -106,11 +111,6 @@
 
   @include for-tablet-landscape-up {
     margin-top: -20vh;
-
-    .subtitle-quote {
-      margin-top: 13vh;
-      margin-left: 5vw;
-    }
   }
 }
 
@@ -120,6 +120,18 @@
 .about-gallery--2-row {
   align-items: flex-end;
 }
+
 .subtitle-quote {
   max-width: 200px;
+
+  @include for-tablet-landscape-up {
+    margin-top: 13vh;
+    margin-left: 5vw;
+  }
+
+  @include for-phone-only {
+    margin: auto;
+    text-align: center;
+    margin-top: 2em;
+  }
 }
