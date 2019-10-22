@@ -318,7 +318,8 @@ html {
 body {
   color: #172B63;
   font-family: "BRHendrix", Roboto, SF, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  font-weight: 300; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -966,7 +967,9 @@ input[type='radio'] {
   font-size: 1rem; }
   @media (max-width: calc(600px - 1px)) {
     .header--link {
-      color: white; } }
+      color: white; }
+      .header--link:hover, .header--link:focus, .header--link:active {
+        color: white !important; } }
   @media (max-width: 599px) {
     .header--link {
       font-size: .9em;
@@ -1028,6 +1031,9 @@ input[type='radio'] {
   padding: 10px 20px;
   font-size: 0.8rem;
   color: var(--color-base);
+  text-decoration: none; }
+
+.footer-icon-link {
   text-decoration: none; }
 
 .footer-icon {
@@ -1569,57 +1575,135 @@ input[type='radio'] {
       width: 20vw; } }
 
 .about--hero {
-  min-height: 83vh;
   position: relative;
   z-index: 0;
   margin-bottom: 3vh;
-  padding-bottom: 4.5vw;
   margin-top: -115px; }
   @media (min-width: 1800px) {
     .about--hero {
       margin-bottom: 5vh; } }
-  @media (min-width: 600px) {
+  @media (min-width: 900px) {
     .about--hero {
       display: grid;
-      grid-template-columns: 1fr 1fr; } }
-  @media (max-width: calc(600px - 1px)) {
-    .about--hero {
-      display: flex;
-      justify-content: stretch; } }
+      grid-template-columns: 1fr 1fr;
+      min-height: 90vh;
+      padding-bottom: 5.5vw; } }
 
-.about--hero--content {
-  padding-right: 35px; }
+@media (min-width: 900px) {
+  .about--hero--content {
+    padding-right: 35px; } }
+@media (max-width: calc(900px - 1px)) {
+  .about--hero--content {
+    padding-bottom: 10vh; } }
+
+@media (max-width: calc(900px - 1px)) {
+  .about--hero--content-wrap {
+    margin-top: 10vh;
+    margin-bottom: 5vh; } }
+@media (min-width: 1200px) {
+  .about--hero--content-wrap h1 {
+    max-width: 300px; } }
 
 .about--hero--img {
   position: relative; }
+  @media (max-width: calc(900px - 1px)) {
+    .about--hero--img {
+      margin-top: -15vh; } }
 
 .about--hero--photo-wrap {
-  position: absolute;
-  left: -30px;
-  bottom: -3vh;
   z-index: 10; }
+  @media (min-width: 900px) {
+    .about--hero--photo-wrap {
+      position: absolute;
+      left: -30px;
+      bottom: -3vh; } }
   @media (min-width: 1200px) {
     .about--hero--photo-wrap {
       max-width: 50vw;
       min-width: 40vw; } }
 
-.about--hero--photo {
-  max-width: 50rem; }
-
 .about--hero--content-lead {
   max-width: 30rem; }
+  @media (max-width: calc(900px - 1px)) {
+    .about--hero--content-lead {
+      margin: auto; } }
 
 .about--hero--dots {
   position: absolute;
   right: 20%;
   top: 20%;
   max-width: 30vw; }
-  @media (max-width: calc(600px - 1px)) {
+  @media (max-width: calc(900px - 1px)) {
     .about--hero--dots {
       display: none; } }
 
+@media (min-width: 900px) {
+  .about-section-gallery {
+    margin-top: 5vh; } }
+
+@media (min-width: 900px) {
+  .about-gallery--1-row,
+  .about-gallery--2-row {
+    margin-top: -20vh; }
+    .about-gallery--1-row .subtitle-quote,
+    .about-gallery--2-row .subtitle-quote {
+      margin-top: 13vh;
+      margin-left: 5vw; } }
+
+.about-gallery--1-row {
+  align-items: flex-start; }
+
+.about-gallery--2-row {
+  align-items: flex-end; }
+
 .subtitle-quote {
   max-width: 200px; }
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0;
+  position: relative;
+  z-index: 1;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 4vh auto; }
+
+.teammate-card {
+  display: flex;
+  flex-direction: column;
+  margin: 3vh 2vw;
+  position: relative;
+  width: 15vw;
+  min-width: 160px;
+  max-width: 300px;
+  text-decoration: none; }
+  @media (max-width: calc(900px - 1px)) {
+    .teammate-card:nth-of-type(2n) {
+      margin-right: 0; } }
+
+.teammate-photo {
+  border-radius: 9px;
+  overflow: hidden;
+  height: 17vw;
+  min-height: 160px; }
+  .teammate-photo > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; }
+
+.teammate-name {
+  margin: 1.2rem 0 .2em 0; }
+
+.teammate-role {
+  margin: .2em 0; }
+
+.teammate-social a {
+  text-decoration: none; }
+
+.teammate-social-icon {
+  width: 1rem;
+  margin-right: .4em; }
 
 /*
 @import '';

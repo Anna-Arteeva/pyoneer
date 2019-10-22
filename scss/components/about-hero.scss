@@ -1,46 +1,70 @@
 .about--hero {
-  min-height: 83vh;
   position: relative;
   z-index: 0;
   margin-bottom: 3vh;
-  padding-bottom: 4.5vw;
   //overflow: hidden;
 
   margin-top: - $header-height;
 
-  @include for-big-desktop-up { margin-bottom: 5vh; }
-
-
-  @include for-tablet-portrait-up {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  @include for-big-desktop-up {
+    margin-bottom: 5vh;
   }
 
-  @include for-tablet-portrait-down {
-    display: flex;
-    justify-content: stretch;
+  @include for-tablet-landscape-up {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    min-height: 90vh;
+    padding-bottom: 5.5vw;
   }
 }
 
 
 .about--hero--content {
   @extend .home--hero--content;
-  padding-right: 35px;
+
+  @include for-tablet-landscape-up {
+    padding-right: 35px;
+  }
+
+  @include for-tablet-landscape-down {
+    padding-bottom: 10vh;
+  }
 }
 
 .about--hero--content-wrap {
   @extend .home--hero--content-wrap;
+
+  @include for-tablet-landscape-down {
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+  }
+
+  @include for-desktop-up {
+    h1 {
+      max-width: 300px;
+    }
+  }
 }
 
 .about--hero--img {
   position: relative;
+
+  @include for-tablet-landscape-down {
+    margin-top: -15vh;
+    //add horizontal margins
+  }
+
 }
 
 .about--hero--photo-wrap {
-  position: absolute;
-  left: -30px;
-  bottom: -3vh;
   z-index: 10;
+
+  @include for-tablet-landscape-up {
+    position: absolute;
+    left: -30px;
+    bottom: -3vh;
+  }
 
   @include for-desktop-up {
     max-width: 50vw;
@@ -48,12 +72,16 @@
   }
 }
 .about--hero--photo {
-  max-width: 50rem;
+  //max-width: 50rem;
 }
 
 .about--hero--content-lead {
   @extend .hero-lead;
   max-width: 30rem;
+
+  @include for-tablet-landscape-down {
+    margin: auto;
+  }
 }
 
 .about--hero--dots {
@@ -62,15 +90,36 @@
   top: 20%;
   max-width: 30vw;
 
-  @include for-tablet-portrait-down {
+  @include for-tablet-landscape-down {
     display: none;
   }
 }
 
 .about-section-gallery {
-
+  @include for-tablet-landscape-up {
+    margin-top: 5vh;
+  }
 }
 
+.about-gallery--1-row,
+.about-gallery--2-row {
+
+  @include for-tablet-landscape-up {
+    margin-top: -20vh;
+
+    .subtitle-quote {
+      margin-top: 13vh;
+      margin-left: 5vw;
+    }
+  }
+}
+
+.about-gallery--1-row {
+  align-items: flex-start;
+}
+.about-gallery--2-row {
+  align-items: flex-end;
+}
 .subtitle-quote {
   max-width: 200px;
 }

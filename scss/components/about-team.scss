@@ -1,0 +1,61 @@
+.team-container {
+  display: flex;
+  justify-content: center;
+
+  padding-bottom: 0;
+  position: relative;
+  z-index: 1;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 4vh auto;
+}
+
+.teammate-card {
+  display: flex;
+  flex-direction: column;
+  margin: 3vh 2vw;
+  position: relative;
+  width:     15vw;
+  min-width: 160px;
+  max-width: 300px;
+
+  text-decoration: none;
+
+  @include for-tablet-landscape-down {
+
+    &:nth-of-type(2n)  {
+      margin-right: 0;
+    }
+  }
+}
+
+.teammate-photo {
+  border-radius:    $border-radius;
+  overflow: hidden;
+  height:       17vw;
+  min-height:   160px;
+
+  >img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+.teammate-name {
+  margin: 1.2rem 0 .2em 0;
+}
+
+.teammate-role {
+  margin: .2em 0;
+}
+
+.teammate-social {
+  a {
+    text-decoration: none;
+  }
+}
+
+.teammate-social-icon {
+  width: 1rem;
+  margin-right: .4em;
+}
