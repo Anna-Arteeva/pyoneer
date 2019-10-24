@@ -1447,7 +1447,7 @@ input[type='radio'] {
 
 .quote-body {
   font-size: calc(1rem + ((1vw - 0.3rem) * 1));
-  font-weight: lighter; }
+  font-weight: 300; }
 
 .quote-author {
   font-weight: bold;
@@ -1478,7 +1478,7 @@ input[type='radio'] {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
-  overflow: scroll; }
+  overflow: auto; }
 
 .contact-section--form {
   max-width: 30rem;
