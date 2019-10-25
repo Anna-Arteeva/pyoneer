@@ -1159,7 +1159,10 @@ input[type='radio'] {
   margin-top: 4vh; }
 
 .home--hero--img {
-  position: relative; }
+  position: relative;
+  background-image: url("../assets/img/home/graph.png");
+  background-size: cover;
+  background-position: bottom left; }
 
 .home--hero--review-floaties {
   position: absolute; }
@@ -1190,8 +1193,9 @@ input[type='radio'] {
 .home--hero--dots {
   position: absolute;
   right: -20%;
-  top: 10%;
-  max-width: 30vw; }
+  top: 70%;
+  max-width: 30vw;
+  display: none; }
   @media (max-width: calc(600px - 1px)) {
     .home--hero--dots {
       display: none; } }

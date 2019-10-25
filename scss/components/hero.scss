@@ -85,6 +85,9 @@
 
 .home--hero--img {
   position: relative;
+  background-image: url("../assets/img/home/graph.png");
+  background-size: cover;
+  background-position: bottom left;
 }
 
 .home--hero--review-floaties {
@@ -123,8 +126,9 @@
 .home--hero--dots {
   position: absolute;
   right: -20%;
-  top: 10%;
+  top: 70%;
   max-width: 30vw;
+  display: none;
 
   @include for-tablet-portrait-down {
     display: none;
