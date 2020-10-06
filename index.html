@@ -1,250 +1,343 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+<html
+  lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:fb="http://ogp.me/ns/fb#"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      Pyoneer - Customer Feedback Analytics. Helping companies to hear their
+      customers.
+    </title>
+    <meta
+      name="description"
+      content="Process Customer Feedback from all channels to reveal the most relevant topics with the power of AI."
+    />
+    <meta
+      name="keywords"
+      content="Customer Feedback, analytics, NLP, AI, Machine learning, support, Reviews, Aggregator"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <title>
-    Pyoneer - Customer Feedback Analytics. Helping companies to hear their
-    customers.
-  </title>
-  <meta name="description"
-    content="Process Customer Feedback from all channels to reveal the most relevant topics with the power of AI." />
-  <meta name="keywords"
-    content="Customer Feedback, analytics, NLP, AI, Machine learning, support, Reviews, Aggregator" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/bundle.css" crossorigin="anonymous" />
 
-  <link rel="stylesheet" href="assets/bundle.css" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet" />
+    <!-- Favicons --->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicons/favicon-16x16.png"
+    />
+    <!-- <link rel="manifest" href="assets/img/favicons/site.webmanifest">-->
+    <link
+      rel="mask-icon"
+      href="assets/img/favicons/safari-pinned-tab.svg"
+      color="#ff4f6a"
+    />
+    <meta name="msapplication-TileColor" content="#3781ff" />
+    <meta name="theme-color" content="#ffffff" />
+    <!---->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-150757082-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-  <!-- Favicons --->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png" />
-  <!-- <link rel="manifest" href="assets/img/favicons/site.webmanifest">-->
-  <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#ff4f6a" />
-  <meta name="msapplication-TileColor" content="#3781ff" />
-  <meta name="theme-color" content="#ffffff" />
-  <!---->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150757082-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("set", {
+        user_id: "USER_ID",
+      }); // Set the user ID using signed-in user_id.
+      gtag("config", "UA-150757082-1");
+    </script>
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Pyoneer.io - Helping companies to hear their customers"
+    />
+    <meta
+      property="og:image"
+      content="https://pyoneer.io/assets/img/re-branding-slides/rebranding-slide-fb.png"
+    />
+    <meta
+      name="twitter:card"
+      content="Pyoneer.io - Customer Feedback Analytics. Helping companies to hear their customers."
+    />
+    <meta
+      property="og:description"
+      content="Process Customer Feedback from all channels to reveal the most relevant topics with the power of AI."
+    />
+  </head>
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("set", {
-      user_id: "USER_ID",
-    }); // Set the user ID using signed-in user_id.
-    gtag("config", "UA-150757082-1");
-  </script>
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Pyoneer.io - Helping companies to hear their customers" />
-  <meta property="og:image" content="https://pyoneer.io/assets/img/re-branding-slides/rebranding-slide-fb.png" />
-  <meta name="twitter:card"
-    content="Pyoneer.io - Customer Feedback Analytics. Helping companies to hear their customers." />
-  <meta property="og:description"
-    content="Process Customer Feedback from all channels to reveal the most relevant topics with the power of AI." />
-</head>
+  <body>
+    <header class="header">
+      <a href="https://pyoneer.io/">
+        <img
+          class="header--logo"
+          src="assets/img/pyoneer-logo.svg"
+          alt="Pyoneer"
+        />
+        <img
+          class="header--logo sm"
+          src="assets/img/pyoneer-logo-color.svg"
+          alt="Pyoneer"
+        />
+      </a>
+      <div class="header-right">
+        <nav class="header--nav">
+          <a class="header--link" href="index.html#product">Product</a>
+          <a class="header--link" href="https://blog.pyoneer.io/about-us/"
+            >About us</a
+          >
+          <a class="header--link" href="https://blog.pyoneer.io">Blog</a>
+          <a class="header--link strong" href="index.html#contact">Contact</a>
 
-<body>
-  <header class="header">
-    <a href="https://pyoneer.io/">
-      <img class="header--logo" src="assets/img/pyoneer-logo.svg" alt="Pyoneer" />
-      <img class="header--logo sm" src="assets/img/pyoneer-logo-color.svg" alt="Pyoneer" />
-    </a>
-    <div class="header-right">
-      <nav class="header--nav">
-        <a class="header--link" href="index.html#product">Product</a>
-        <a class="header--link" href="about.html">About us</a>
-        <a class="header--link" href="https://blog.pyoneer.io">Blog</a>
-        <a class="header--link strong" href="index.html#contact">Contact</a>
-
-        <a href="https://www.linkedin.com/company/pyoneer/" class="header--link icon" target="_blank">
-          <img class="footer-icon" src="assets/img/icons/linkedin.svg" />
-        </a>
-      </nav>
-    </div>
-  </header>
-
-  <section class="home--hero">
-    <div class="home--hero--content">
-      <div class="home--hero--content-wrap">
-        <h1 class="display-1">Helping companies to hear their customers</h1>
-        <p class="home--hero--content-lead">
-          Analyze customer feedback from all channels to reveal the most
-          relevant topics with the power of AI.
-        </p>
-        <p class="hero-button">
-          <a class="button-shadow" href="#contact">
-            <span class="button button-lg"> Try for Free </span>
+          <a
+            href="https://www.linkedin.com/company/pyoneer/"
+            class="header--link icon"
+            target="_blank"
+          >
+            <img class="footer-icon" src="assets/img/icons/linkedin.svg" />
           </a>
-        </p>
+        </nav>
       </div>
-    </div>
+    </header>
 
-    <div class="home--hero--img">
-      <img class="home--hero--review-floaties" src="assets/img/home/review-floaties.svg" />
-      <!--img class="home--hero--chart" src="assets/img/hero-img.svg"-->
-      <img class="home--hero--dots" src="assets/img/dots-blue.svg" />
-    </div>
-  </section>
-
-  <section class="section work-dots-section">
-    <h3 class="subtitle text-centered">Innovation loop</h3>
-    <h2 class="display-2 text-centered" style="max-width: 50rem; margin-left: auto; margin-right: auto">
-      Analyze, measure, and improve your
-      <span class="nowrap"> customer experience. </span>
-      <br />
-      Then repeat.
-    </h2>
-
-    <ul class="work-dots" role="tablist">
-      <li class="" role="presentation"><span>Collect feedback</span></li>
-      <li class="" role="presentation"><span>Identify trends</span></li>
-      <li class="" role="presentation">
-        <span class="underline-1">Understand the <strong>Why</strong></span>
-      </li>
-      <li class="" role="presentation">
-        <span>Set goals & hypotheses</span>
-      </li>
-
-      <li class="" role="presentation"><span>Take action</span></li>
-    </ul>
-  </section>
-
-  <section class="section pic-right--section image-section-white section-back" id="product">
-    <div class="pic-right--content">
-      <h3 class="subtitle">01</h3>
-      <h3 class="display-2">Centralize  customer feedback</h3>
-      <p class="lead">
-        No matter where your customers are reaching out to you, import the
-        feedback data in real-time from mobile, web, and other platforms.
-        Connect through numerous integrations or upload your data-files.
-      </p>
-    </div>
-    <div class="pic-right--pic-container">
-      <div class="screenshot-wrapper no-back screenshot-integrations">
-        <img class="screenshot no-back" src="assets/img/home/integrations.png" alt="" />
-      </div>
-    </div>
-  </section>
-
-  <section class="section pic-left--section image-section-white">
-    <div class="pic-left--content">
-      <h3 class="subtitle">02</h3>
-      <h3 class="display-2">Identify trends with automated  AI handling</h3>
-
-      <p class="lead">
-        Once you’ve collected the feedback, define key business metrics and
-        see how they trend over time. Maybe you want to see what users speak
-        about a particular feature or what are the themes that get the most
-        attention. Identify all the patterns that matter to your business.
-      </p>
-    </div>
-    <div class="pic-left--pic-container">
-      <div class="screenshot-shadow">
-        <div class="screenshot-wrapper">
-          <img class="screenshot" src="assets/img/home/pyoneer-home-3.png" alt="" />
+    <section class="home--hero">
+      <div class="home--hero--content">
+        <div class="home--hero--content-wrap">
+          <h1 class="display-1">Helping companies to hear their customers</h1>
+          <p class="home--hero--content-lead">
+            Analyze customer feedback from all channels to reveal the most
+            relevant topics with the power of AI.
+          </p>
+          <p class="hero-button">
+            <a class="button-shadow" href="#contact">
+              <span class="button button-lg"> Try for Free </span>
+            </a>
+          </p>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section class="section pic-right--section image-section-white section-back">
-    <div class="pic-right--content">
-      <h3 class="subtitle">03</h3>
-      <h3 class="display-2">Understand the Why</h3>
-      <p class="lead">
-        Now that you’ve identified the trends, understand why those trends are
-        happening. Pyoneer helps to quantify user insights so you can focus on
-        what matters the most. After choosing the relevant topic, use the
-        power of qualitative to comprehend humans on the other side. Find out
-        the real answers to the questions raised by data.
-      </p>
-    </div>
-    <div class="pic-right--pic-container">
-      <div class="screenshot-shadow">
-        <div class="screenshot-wrapper">
-          <img class="screenshot" src="assets/img/home/pyoneer-home-2.png" alt="" />
+      <div class="home--hero--img">
+        <img
+          class="home--hero--review-floaties"
+          src="assets/img/home/review-floaties.svg"
+        />
+        <!--img class="home--hero--chart" src="assets/img/hero-img.svg"-->
+        <img class="home--hero--dots" src="assets/img/dots-blue.svg" />
+      </div>
+    </section>
+
+    <section class="section work-dots-section">
+      <h3 class="subtitle text-centered">Innovation loop</h3>
+      <h2
+        class="display-2 text-centered"
+        style="max-width: 50rem; margin-left: auto; margin-right: auto"
+      >
+        Analyze, measure, and improve your
+        <span class="nowrap"> customer experience. </span>
+        <br />
+        Then repeat.
+      </h2>
+
+      <ul class="work-dots" role="tablist">
+        <li class="" role="presentation"><span>Collect feedback</span></li>
+        <li class="" role="presentation"><span>Identify trends</span></li>
+        <li class="" role="presentation">
+          <span class="underline-1">Understand the <strong>Why</strong></span>
+        </li>
+        <li class="" role="presentation">
+          <span>Set goals & hypotheses</span>
+        </li>
+
+        <li class="" role="presentation"><span>Take action</span></li>
+      </ul>
+    </section>
+
+    <section
+      class="section pic-right--section image-section-white section-back"
+      id="product"
+    >
+      <div class="pic-right--content">
+        <h3 class="subtitle">01</h3>
+        <h3 class="display-2">Centralize  customer feedback</h3>
+        <p class="lead">
+          No matter where your customers are reaching out to you, import the
+          feedback data in real-time from mobile, web, and other platforms.
+          Connect through numerous integrations or upload your data-files.
+        </p>
+      </div>
+      <div class="pic-right--pic-container">
+        <div class="screenshot-wrapper no-back screenshot-integrations">
+          <img
+            class="screenshot no-back"
+            src="assets/img/home/integrations.png"
+            alt=""
+          />
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section pic-left--section image-section-white">
-    <div class="pic-left--content">
-      <h3 class="subtitle">04</h3>
-      <h3 class="display-2">Take data-informed actions</h3>
+    <section class="section pic-left--section image-section-white">
+      <div class="pic-left--content">
+        <h3 class="subtitle">02</h3>
+        <h3 class="display-2">Identify trends with automated  AI handling</h3>
 
-      <p class="lead">
-        With your plan in mind, test your hypotheses in real-time through
-        product experiments, messaging, and personalization. Track what
-        results each change delivers.
-      </p>
-    </div>
-    <div class="pic-left--pic-container">
-      <div class="screenshot-shadow">
-        <div class="screenshot-wrapper">
-          <img class="screenshot" src="assets/img/home/pyoneer-home-4.png" alt="" />
+        <p class="lead">
+          Once you’ve collected the feedback, define key business metrics and
+          see how they trend over time. Maybe you want to see what users speak
+          about a particular feature or what are the themes that get the most
+          attention. Identify all the patterns that matter to your business.
+        </p>
+      </div>
+      <div class="pic-left--pic-container">
+        <div class="screenshot-shadow">
+          <div class="screenshot-wrapper">
+            <img
+              class="screenshot"
+              src="assets/img/home/pyoneer-home-3.png"
+              alt=""
+            />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="dark-section">
-    <div class="section--content">
-      <div class="text-centered">
-        <h4 class="subtitle">* * *</h4>
-        <p class="quote-body">
-          “Pyoneer is a life-safer! I can plan my roadmap with full confidence
-          because I’m now able to make use of all the feedback from
-          customers.”
-        </p>
-        <p class="quote-author">
-          Bernhard Hecker
-          <br />
-          <span class="quote-author-role">
-            Product Management Consultant
-          </span>
-        </p>
-        <p>
-          <img class="quote-author-img" src="assets/img/home/bernhard-hecker.jpg" alt="Bernhard Hecker" />
+    <section
+      class="section pic-right--section image-section-white section-back"
+    >
+      <div class="pic-right--content">
+        <h3 class="subtitle">03</h3>
+        <h3 class="display-2">Understand the Why</h3>
+        <p class="lead">
+          Now that you’ve identified the trends, understand why those trends are
+          happening. Pyoneer helps to quantify user insights so you can focus on
+          what matters the most. After choosing the relevant topic, use the
+          power of qualitative to comprehend humans on the other side. Find out
+          the real answers to the questions raised by data.
         </p>
       </div>
-    </div>
-  </section>
-
-  <section class="section contact-section" id="contact">
-    <div class="section--content">
-      <div class="text-centered">
-        <h3 class="subtitle">Interested?</h3>
-        <h2 class="display-2">Let us show you around</h2>
+      <div class="pic-right--pic-container">
+        <div class="screenshot-shadow">
+          <div class="screenshot-wrapper">
+            <img
+              class="screenshot"
+              src="assets/img/home/pyoneer-home-2.png"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
-      <div class="contact-section--form">
-        <!--[if lte IE 8]>
+    </section>
+
+    <section class="section pic-left--section image-section-white">
+      <div class="pic-left--content">
+        <h3 class="subtitle">04</h3>
+        <h3 class="display-2">Take data-informed actions</h3>
+
+        <p class="lead">
+          With your plan in mind, test your hypotheses in real-time through
+          product experiments, messaging, and personalization. Track what
+          results each change delivers.
+        </p>
+      </div>
+      <div class="pic-left--pic-container">
+        <div class="screenshot-shadow">
+          <div class="screenshot-wrapper">
+            <img
+              class="screenshot"
+              src="assets/img/home/pyoneer-home-4.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-section">
+      <div class="section--content">
+        <div class="text-centered">
+          <h4 class="subtitle">* * *</h4>
+          <p class="quote-body">
+            “Pyoneer is a life-safer! I can plan my roadmap with full confidence
+            because I’m now able to make use of all the feedback from
+            customers.”
+          </p>
+          <p class="quote-author">
+            Bernhard Hecker
+            <br />
+            <span class="quote-author-role">
+              Product Management Consultant
+            </span>
+          </p>
+          <p>
+            <img
+              class="quote-author-img"
+              src="assets/img/home/bernhard-hecker.jpg"
+              alt="Bernhard Hecker"
+            />
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section--content">
+        <div class="text-centered">
+          <h3 class="subtitle">Interested?</h3>
+          <h2 class="display-2">Let us show you around</h2>
+        </div>
+        <div class="contact-section--form">
+          <!--[if lte IE 8]>
             <script
               charset="utf-8"
               type="text/javascript"
               src="//js.hsforms.net/forms/v2-legacy.js"
             ></script>
           <![endif]-->
-        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-        <script>
-          hbspt.forms.create({
-            portalId: "6091377",
-            formId: "1ee17e4d-89c4-4923-aa0a-f5434837002f",
-          });
-        </script>
+          <script
+            charset="utf-8"
+            type="text/javascript"
+            src="//js.hsforms.net/forms/v2.js"
+          ></script>
+          <script>
+            hbspt.forms.create({
+              portalId: "6091377",
+              formId: "1ee17e4d-89c4-4923-aa0a-f5434837002f",
+            });
+          </script>
+        </div>
       </div>
-    </div>
-  </section>
-  <!--
+    </section>
+    <!--
 <section class="centered-section">
     <h2 class="display-3">Companies trust Pyoneer for growth</h2>
     <div class="partner-logos">
@@ -253,44 +346,74 @@
 </section>
 -->
 
-  <footer class="footer section">
-    <div>
-      Pyoneer 2019 ©
+    <footer class="footer section">
+      <div>
+        Pyoneer 2019 ©
+        <div class="footer-list">
+          <a
+            class="footer-link strong"
+            href="https://blog.pyoneer.io/about-us/"
+          >
+            Company
+          </a>
+          <a
+            class="footer-link strong"
+            href="https://www.linkedin.com/company/pyoneer/"
+            target="_blank"
+          >
+            Career
+          </a>
+          <a
+            class="footer-link strong"
+            href="https://blog.pyoneer.io"
+            target="_blank"
+          >
+            Blog
+          </a>
+          <a class="footer-link strong" href="index.html#contact">
+            Contact us
+          </a>
+        </div>
+      </div>
+
       <div class="footer-list">
-        <a class="footer-link strong" href="about.html"> Company </a>
-        <a class="footer-link strong" href="https://www.linkedin.com/company/pyoneer/" target="_blank">
-          Career
+        <a class="footer-link" href="impressum.html"> Impressum </a>
+        <a
+          class="footer-link"
+          href="https://www.iubenda.com/privacy-policy/12889167/legal"
+          target="_blank"
+        >
+          Privacy & Terms
         </a>
-        <a class="footer-link strong" href="https://blog.pyoneer.io" target="_blank">
-          Blog
+        <a
+          href="https://www.linkedin.com/company/pyoneer/"
+          class="footer-icon-link"
+          target="_blank"
+        >
+          <img class="footer-icon" src="assets/img/icons/linkedin.svg" />
         </a>
-        <a class="footer-link strong" href="index.html#contact">
-          Contact us
+        <a
+          href="https://medium.com/@stefan.h.link"
+          class="footer-icon-link"
+          target="_blank"
+        >
+          <img class="footer-icon" src="assets/img/icons/medium.svg" />
         </a>
       </div>
-    </div>
+    </footer>
+    <!-- Start of HubSpot Embed Code -->
+    <script
+      type="text/javascript"
+      id="hs-script-loader"
+      async
+      defer
+      src="//js.hs-scripts.com/6091377.js"
+    ></script>
+    <!-- End of HubSpot Embed Code -->
 
-    <div class="footer-list">
-      <a class="footer-link" href="impressum.html"> Impressum </a>
-      <a class="footer-link" href="https://www.iubenda.com/privacy-policy/12889167/legal" target="_blank">
-        Privacy & Terms
-      </a>
-      <a href="https://www.linkedin.com/company/pyoneer/" class="footer-icon-link" target="_blank">
-        <img class="footer-icon" src="assets/img/icons/linkedin.svg" />
-      </a>
-      <a href="https://medium.com/@stefan.h.link" class="footer-icon-link" target="_blank">
-        <img class="footer-icon" src="assets/img/icons/medium.svg" />
-      </a>
-    </div>
-  </footer>
-  <!-- Start of HubSpot Embed Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6091377.js"></script>
-  <!-- End of HubSpot Embed Code -->
-
-  <!-- 
+    <!-- 
   <script data-api-url="https://app.limecall.com"
     data-api-key="$2y$10$bEIBWX95Hp7DzVqwKz6JG.kOt9I9h90vx5hpPG0WCQvHQQFlUFsPa"
     src="https://widget.limecall.com/widget.js"></script> -->
-</body>
-
+  </body>
 </html>
